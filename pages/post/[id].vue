@@ -9,7 +9,5 @@
 <script lang="ts" setup>
 
 const route = useRoute();
-
 const { data, pending, error } = await useGetPost(String(route.params.id));
-
 </script>

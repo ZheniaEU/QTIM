@@ -8,5 +8,4 @@
 import { useGetPosts } from "~/composables/useGetPosts";
 
 const { data, pending, error } = await useGetPosts();
-
 </script>

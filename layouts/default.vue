@@ -5,7 +5,6 @@
          <div id="primary" class="content-area column full">
             <main id="main" class="site-main">
                <slot />
-
             </main>
          </div>
       </div>
