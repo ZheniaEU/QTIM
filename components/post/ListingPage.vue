@@ -19,9 +19,9 @@ const router = useRouter();
 
 const currentPage = ref(1);
 
-const number = 6;
+const postsPerPage = 6;
 const length = props.allPosts.length || 0;
-const lastPage = Math.ceil(length / number);
+const lastPage = Math.ceil(length / postsPerPage);
 
 onMounted(() => {
    const page = Number(route.query.page);
@@ -31,7 +31,7 @@ onMounted(() => {
 });
 
 const slicedPosts = computed(() => {
-   return props.allPosts.slice((currentPage.value - 1) * number, currentPage.value * number);
+   return props.allPosts.slice((currentPage.value - 1) * postsPerPage, currentPage.value * postsPerPage);
 });
 
 function updateCurrentPage() {

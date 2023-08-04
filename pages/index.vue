@@ -1,5 +1,5 @@
 <template>
-      <PostPageContent v-if="data" :allPosts="data" />
+      <PostListingPage v-if="data" :allPosts="data" />
       <span v-if="pending">Загрузка</span>
       <span v-if="error">{{ error.data }}</span>
 </template>
